@@ -26,9 +26,6 @@ fetch('https://countries-api-hsak.onrender.com/api/countries/')
 
 
    
-  
-
-
 let select = document.querySelector('#select')
 select.addEventListener('change',function(){
 
