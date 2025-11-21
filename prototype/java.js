@@ -10,7 +10,8 @@ fetch('https://countries-api-hsak.onrender.com/api/countries/')
     list.forEach(function(country){
     
        let div = document.createElement('div');
-   div.className='div';
+    div.className='div';
+    div.addEventListener('click',function(){window.location.href = `country-details.html?name=${country.name}`;})
     let p =document.createElement('p')
     p.innerHTML=country.name;
     div.appendChild(p)
